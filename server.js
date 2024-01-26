@@ -18,11 +18,12 @@ app.use(express.static(path.join(__dirname, "src")))
 
 app.post("/email", (req, res) => {
   // send email here
+  console.log("Data: ", req.body)
   res.json({ message: "Message received!" })
 })
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "src", "index.html"))
+  res.sendFile(path.join(__dirname, "src", "index.html", "output.css"))
 })
 
 app.listen(PORT, () => {
