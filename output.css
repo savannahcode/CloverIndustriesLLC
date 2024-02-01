@@ -852,17 +852,26 @@ html {
   display: flex;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-.bg-red-700 {
+.bg-cloverGreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+  background-color: rgb(47 90 64 / var(--tw-bg-opacity));
 }
 
 .font-recoletaReg {
   font-family: recoleta-regular, sans-serif;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @font-face {

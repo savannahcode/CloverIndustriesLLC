@@ -8,6 +8,9 @@ module.exports = {
         recoletaReg: ["recoleta-regular", "sans-serif"],
         recoletaMd: ["recoleta-medium", "sans-serif"],
       },
+      colors: {
+        cloverGreen: "#2F5A40",
+      },
     },
   },
   plugins: [require("daisyui")],

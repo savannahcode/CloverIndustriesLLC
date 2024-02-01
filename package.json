@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "dev": "nodemon npx tailwindcss -i ./input.css -o ./output.css --watch"
+    "tailwind": "npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "serve": "http-server . -p 8000 -o",
+    "start": "concurrently \"npm:tailwind\" \"npm:serve\""
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,9 @@
     "nodemailer-mailgun-transport": "^2.1.5"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "daisyui": "^4.6.0",
+    "http-server": "^14.1.1",
     "nodemon": "^3.0.3",
     "tailwindcss": "^3.4.1",
     "webpack": "^5.90.0",
