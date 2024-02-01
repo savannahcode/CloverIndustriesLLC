@@ -11,15 +11,47 @@
       <img
         src="cloverLogo.svg"
         alt="Clover Industries Logo"
-        class="w-30 h-auto"
+        class="w-24 h-auto m-3"
       />
-      <h1>Clover Industries Landscaping</h1>
+      <h1 class="text-2xl md:text-6-xl m-5">Clover Industries Landscaping</h1>
+      <div class="drawer drawer-end">
+        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+          <!-- Page content here -->
+          <label for="my-drawer-4" class="drawer-button btn btn-primary"
+            >Open drawer</label
+          >
+        </div>
+        <div class="drawer-side">
+          <label
+            for="my-drawer-4"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+            <!-- Sidebar content here -->
+            <li><a>Sidebar Item 1</a></li>
+            <li><a>Sidebar Item 2</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div class="flex flex-wrap">
       <div><h1>Dream</h1></div>
       <div><h1>Design</h1></div>
       <div><h1>Build</h1></div>
     </div>
-    <script></script>
+    <script>
+      // Select all links inside the drawer
+      var drawerLinks = document.querySelectorAll(".drawer-side a")
+
+      // Add a click event listener to each link
+      drawerLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          // When a link is clicked, uncheck the checkbox to close the drawer
+          document.getElementById("my-drawer-4").checked = false
+        })
+      })
+    </script>
   </body>
 </html>
