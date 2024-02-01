@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "recoleta-light";
+    src: url("./fonts/Recoleta-Light/Recoleta-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "recoleta-regular";
+    src: url("./fonts/Recoleta-Regular/Recoleta-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "recoleta-medium";
+    src: url("./fonts/Recoleta-Medium/Recoleta-Medium.ttf");
+  }
