@@ -20,7 +20,7 @@ module.exports = {
         process: "url('/images/process.jpg')",
         reviews: "url('/images/reviews.jpg')",
         services: "url('/images/services.jpg')",
-        contact: "url('/images/contact.jpg')",
+        contact: "url('/images/contact2.jpg')",
         sod: "url('/images/sod.jpg')",
         sprinkler: "url('/images/sprinklers.jpg')",
         fireplaces: "url('/images/fireplace.jpg')",
