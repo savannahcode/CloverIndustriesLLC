@@ -12,7 +12,7 @@
     <title>Clover Industries LLC</title>
   </head>
   <body class="font-recoletaReg text-white">
-    <nav class="bg-cloverGreen text-white flex justify-between">
+    <nav class="bg-cloverGreen text-white flex justify-between sticky top-0">
       <img
         src="./images/cloverLogo.svg"
         alt="Clover Industries Logo"
@@ -42,7 +42,7 @@
               class="menu p-4 w-80 min-h-full bg-cloverGreen text-xl text-white"
             >
               <!-- Sidebar content here -->
-              <li><a>Our Process</a></li>
+              <li><a href="#process">Our Process</a></li>
               <li><a>Reviews</a></li>
               <li><a>Services</a></li>
               <li><a>Contact Us</a></li>
@@ -54,11 +54,11 @@
     <div class="bg-hero bg-center bg-cover bg-no-repeat">
       <div class="bg-overlay-md bg-blend-darken">
         <div class="flex flex-col justify-center items-center">
-          <h1 class="text-center text-4xl md:text-6xl mb-10 mt-20 mx-5">
+          <h1 class="text-center text-4xl md:text-6xl mb-10 mt-24 mx-5">
             Clover Industries Landscaping
           </h1>
           <button
-            class="btn btn-outline border-white text-white hover:bg-white hover:border-white text-2xl md:text-3xl lg:text-4xl border-2 mb-20 mx-5"
+            class="btn btn-outline border-white text-white hover:bg-white hover:border-white text-2xl md:text-3xl lg:text-4xl border-2 mb-24 mx-5 hover:text-cloverGreen"
           >
             Schedule Free Estimate
           </button>
@@ -68,27 +68,170 @@
     <!--<div class="w-full h-full flex  justify-center items-center backdrop-brightness-50">-->
     <div class="flex flex-wrap">
       <div class="w-1/3 h-64 bg-dream bg-center bg-cover bg-no-repeat">
-        <div
-          class="bg-overlay-lg bg-blend-darken flex flex-col justify-center items-center w-full h-64 hover:bg-overlay-sm"
-        >
-          <i class="fa-solid fa-cloud fa-xl mb-2"></i>
-          <h1 class="mt-1 text-lg">Dream</h1>
-        </div>
+        <a href="#dream">
+          <div
+            class="bg-overlay-lg bg-blend-darken flex flex-col justify-center items-center w-full h-64 hover:bg-overlay-sm"
+          >
+            <i class="fa-solid fa-cloud fa-xl mb-2"></i>
+            <h1 class="mt-1 text-lg">Dream</h1>
+          </div>
+        </a>
       </div>
+
       <div class="w-1/3 h-64 bg-design bg-center bg-cover bg-no-repeat">
-        <div
-          class="bg-overlay-lg bg-blend-darken flex flex-col justify-center items-center w-full h-64 hover:bg-overlay-sm"
-        >
-          <i class="fa-solid fa-compass-drafting fa-xl mb-2"></i>
-          <h1 class="mt-1 text-lg">Design</h1>
+        <a href="#design">
+          <div
+            class="bg-overlay-lg bg-blend-darken flex flex-col justify-center items-center w-full h-64 hover:bg-overlay-sm"
+          >
+            <i class="fa-solid fa-compass-drafting fa-xl mb-2"></i>
+            <h1 class="mt-1 text-lg">Design</h1>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-1/3 h-64 bg-build bg-center bg-cover bg-no-repeat">
+        <a href="#build">
+          <div
+            class="bg-overlay-lg bg-blend-darken flex flex-col justify-center items-center w-full h-64 hover:bg-overlay-sm"
+          >
+            <i class="fa-solid fa-person-digging fa-xl mb-2"></i>
+            <h1 class="mt-1 text-lg">Build</h1>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--End of Dream Design & Build buttons-->
+    <div class="bg-process bg-center bg-cover bg-no-repeat" id="process">
+      <div class="bg-overlay-md bg-blend-darken">
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-center text-4xl md:text-5xl m-5">Our Process</h1>
         </div>
       </div>
-      <div class="w-1/3 h-64 bg-build bg-center bg-cover bg-no-repeat">
-        <div
-          class="bg-overlay-lg bg-blend-darken flex flex-col justify-center items-center w-full h-64 hover:bg-overlay-sm"
-        >
-          <i class="fa-solid fa-person-digging fa-xl mb-2"></i>
-          <h1 class="mt-1 text-lg">Build</h1>
+    </div>
+    <!--Beginning of Dream Explanation-->
+    <div class="bg-white text-slate-900 flexflex-col gap-5">
+      <div id="dream" class="flex p-5 md:flex-row flex-col">
+        <div class="m-3 flex flex-col justify-center">
+          <h1
+            class="m-3 ml-0 text-xl md:text-2xl text-cloverGreen font-recoletaMd"
+          >
+            Dream
+          </h1>
+          <p>
+            Our dedicated team of professionals will insure that the vision of
+            your oasis comes to life. We believe every outdoor space has the
+            potential of becoming your dream retreat, a place to enjoy with
+            family and friends and make lasting memories. We will help you
+            create your unique space.
+          </p>
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            src="./images/dreamImg.jpg"
+            alt="people looking outside"
+            class="w-full h-auto m-3"
+          />
+        </div>
+      </div>
+      <!--Beginning of Design Explanation-->
+      <div id="design" class="flex md:flex-row flex-col p-5">
+        <div class="flex justify-center items-center">
+          <img
+            src="./images/designImg.jpg"
+            alt="people looking outside"
+            class="w-full h-auto p-3"
+          />
+        </div>
+        <div class="m-3 flex-col justify-center">
+          <h1
+            class="m-3 ml-0 text-xl md:text-2xl text-cloverGreen font-recoletaMd"
+          >
+            Design
+          </h1>
+          <p>
+            At Clover Industries, we take immense pleasure in designing spaces.
+            Whether you have a design in mind or need assistance, we'll work
+            together to achieve your dream space.
+          </p>
+          <h2 class="text-lg md:text-xl mt-3 text-cloverGreen font-recoletaMd">
+            Our Design Process...
+          </h2>
+          <ul class="list-disc m-3 ml-5 mb-3">
+            <li>
+              Utilizes Land FX (one of the best landscape design programs
+              available)
+            </li>
+            <li>
+              We fly a survey drone to measure the space with pinpoint accuracy
+            </li>
+            <li>
+              Gathered data is loaded into the Land FX program, using AutoCad
+              and Revit software
+            </li>
+            <li>
+              Creates a detailed 3D design, bringing your project to life with
+              stunning detail
+            </li>
+          </ul>
+          <p>
+            The possibilities for your dream space are endless with our
+            innovative design approach!
+          </p>
+        </div>
+      </div>
+      <!--Beginning of Build Explanation-->
+      <div id="build" class="flex md:flex-row flex-col p-5">
+        <div class="m-3">
+          <h1
+            class="m-3 ml-0 text-xl md:text-2xl text-cloverGreen font-recoletaMd"
+          >
+            Build
+          </h1>
+          <p>
+            Now the fun part begins! After discussing your goal and designing
+            your space we will begin the installation.
+          </p>
+          <h2 class="text-lg md:text-xl mt-3 text-cloverGreen font-recoletaMd">
+            Our Building Process...
+          </h2>
+          <ul class="list-disc m-3 ml-5 mb-3">
+            <li>Consistant updates on your project</li>
+            <li>Set deadlines</li>
+            <li>Commitment to your satisfaction</li>
+            <li>Ensuring every project meets your expectations</li>
+          </ul>
+          <h2 class="text-lg md:text-xl mt-3 text-cloverGreen font-recoletaMd">
+            Initial Excavation
+          </h2>
+          <p class="mb-3">
+            insures proper nutrient content in the soil, correct grades for
+            proper runoff, and proper bedding before any plants are installed
+          </p>
+          <h2 class="text-lg md:text-xl mt-3 text-cloverGreen font-recoletaMd">
+            Sprinkler Systems
+          </h2>
+          <p class="mb-3">
+            are engineered for optimum efficiency, installed using top-quality
+            components, and as-built designs given to clients afterward
+          </p>
+          <h2 class="text-lg md:text-xl mt-3 text-cloverGreen font-recoletaMd">
+            Arrangement
+          </h2>
+          <p class="mb-3">
+            of your plants from our designer will be the final process before
+            installation to ensure it is aesthetically pleasing.
+          </p>
+          <p>
+            Crafting exceptional landscapes is our passion. We give your project
+            the care and attention it deserves.
+          </p>
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            src="./images/build.jpg"
+            alt="people looking outside"
+            class="w-full h-auto p-3"
+          />
         </div>
       </div>
     </div>

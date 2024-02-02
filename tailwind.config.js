@@ -17,6 +17,10 @@ module.exports = {
         dream: "url('/images/dream.jpg')",
         design: "url('/images/design.jpg')",
         build: "url('/images/build2.jpg')",
+        process: "url('/images/process.jpg')",
+        reviews: "url('/images/reviews.jpg')",
+        services: "url('/images/services.jpg')",
+        contact: "url('/images/contact.jpg')",
       },
       backgroundColor: {
         "overlay-sm": "rgba(0, 0, 0, 0.3)",
