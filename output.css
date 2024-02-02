@@ -1759,8 +1759,16 @@ html {
   margin-bottom: 2.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-20 {
@@ -1771,8 +1779,8 @@ html {
   display: flex;
 }
 
-.h-36 {
-  height: 9rem;
+.h-48 {
+  height: 12rem;
 }
 
 .h-auto {
@@ -1781,18 +1789,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-44 {
-  height: 11rem;
-}
-
-.h-48 {
-  height: 12rem;
 }
 
 .min-h-full {
@@ -1867,12 +1863,28 @@ html {
   background-color: rgb(20 83 45 / var(--tw-bg-opacity));
 }
 
-.bg-overlay {
+.bg-overlay-lg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-overlay-md {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.bg-home-hero-bg {
-  background-image: url('/images/home-hero-bg.png');
+.bg-build {
+  background-image: url('/images/build2.jpg');
+}
+
+.bg-design {
+  background-image: url('/images/design.jpg');
+}
+
+.bg-dream {
+  background-image: url('/images/dream.jpg');
+}
+
+.bg-hero {
+  background-image: url('/images/hero.jpg');
 }
 
 .bg-cover {
@@ -1912,6 +1924,11 @@ html {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -1967,6 +1984,10 @@ html {
   background-color: rgb(5 46 22 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-overlay-sm:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1975,10 +1996,6 @@ html {
 @media (min-width: 768px) {
   .md\:w-16 {
     width: 4rem;
-  }
-
-  .md\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .md\:text-4xl {

@@ -12,11 +12,16 @@ module.exports = {
         cloverGreen: "#2F5A40",
       },
       backgroundImage: {
-        "home-hero-bg": "url('/images/home-hero-bg.png')",
+        hero: "url('/images/hero.jpg')",
         "footer-texture": "url('/images/footer-texture.png')",
+        dream: "url('/images/dream.jpg')",
+        design: "url('/images/design.jpg')",
+        build: "url('/images/build2.jpg')",
       },
       backgroundColor: {
-        overlay: "rgba(0, 0, 0, 0.4)",
+        "overlay-sm": "rgba(0, 0, 0, 0.3)",
+        "overlay-md": "rgba(0, 0, 0, 0.4)",
+        "overlay-lg": "rgba(0, 0, 0, 0.5)",
       },
     },
   },
