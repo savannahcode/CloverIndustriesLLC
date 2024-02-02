@@ -16,7 +16,7 @@ module.exports = {
         "footer-texture": "url('/images/footer-texture.png')",
       },
       backgroundColor: {
-        overlay: "rgba(0, 0, 0, 0.5)",
+        overlay: "rgba(0, 0, 0, 0.4)",
       },
     },
   },
