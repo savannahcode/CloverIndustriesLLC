@@ -11,13 +11,15 @@
     ></script>
     <title>Clover Industries LLC</title>
   </head>
-  <body class="font-recoletaReg text-white">
+  <body class="font-recoletaReg text-white scroll-pt-28">
     <nav class="bg-cloverGreen text-white flex justify-between sticky top-0">
-      <img
-        src="./images/cloverLogo.svg"
-        alt="Clover Industries Logo"
-        class="md:w-16 w-12 h-auto m-3"
-      />
+      <a href="/">
+        <img
+          src="./images/cloverLogo.svg"
+          alt="Clover Industries Logo"
+          class="md:w-16 w-12 h-auto m-2"
+        />
+      </a>
       <h1 class="text-xl md:text-3xl m-5 flex-grow">
         Clover Industries Landscaping
       </h1>
@@ -142,7 +144,7 @@
             class="w-full h-auto p-3"
           />
         </div>
-        <div class="m-3 flex-col justify-center">
+        <div class="m-3 flex flex-col justify-center">
           <h1
             class="m-3 ml-0 text-xl md:text-2xl text-cloverGreen font-recoletaMd"
           >
@@ -226,11 +228,16 @@
             the care and attention it deserves.
           </p>
         </div>
-        <div class="flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-3">
           <img
             src="./images/build.jpg"
             alt="people looking outside"
             class="w-full h-auto p-3"
+          />
+          <img
+            src="./images/build3.jpg"
+            alt="people looking outside"
+            class="w-full h-auto p-3 hidden md:block lg:hidden"
           />
         </div>
       </div>
@@ -245,6 +252,10 @@
           // When a link is clicked, uncheck the checkbox to close the drawer
           document.getElementById("my-drawer-4").checked = false
         })
+      })
+
+      window.addEventListener("hashchange", function () {
+        window.scrollTo(window.scrollX, window.scrollY - 92)
       })
       // PRESS CMD + SHIFT + R to clear cache and see changes
     </script>

@@ -16,3 +16,7 @@
     font-family: "recoleta-medium";
     src: url("./fonts/Recoleta-Medium/Recoleta-Medium.ttf");
   }
+
+  body {
+    scroll-padding-top: 70px; /* Replace with the actual height of your navigation bar */
+  }
