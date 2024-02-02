@@ -21,6 +21,12 @@ module.exports = {
         reviews: "url('/images/reviews.jpg')",
         services: "url('/images/services.jpg')",
         contact: "url('/images/contact.jpg')",
+        sod: "url('/images/sod.jpg')",
+        sprinkler: "url('/images/sprinklers.jpg')",
+        fireplaces: "url('/images/fireplace.jpg')",
+        wall: "url('/images/wall.jpg')",
+        pavers: "url('/images/pavers.jpg')",
+        trampoline: "url('/images/trampoline.jpg')",
       },
       backgroundColor: {
         "overlay-sm": "rgba(0, 0, 0, 0.3)",
