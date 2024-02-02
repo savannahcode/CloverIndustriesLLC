@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/77eefe8645.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Clover Industries LLC: Contact Us</title>
+  </head>
+  <body class="font-recoletaReg text-white scroll-pt-28">
+    <nav class="bg-cloverGreen text-white flex justify-between sticky top-0">
+      <a href="/">
+        <img
+          src="./images/cloverLogo.svg"
+          alt="Clover Industries Logo"
+          class="md:w-16 w-12 h-auto m-2"
+        />
+      </a>
+      <h1 class="text-xl md:text-3xl m-5 flex-grow">
+        Clover Industries Landscaping
+      </h1>
+      <div class="flex-none m-3">
+        <div class="drawer drawer-end">
+          <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content flex-none">
+            <!-- Page content here -->
+            <label
+              for="my-drawer-4"
+              class="drawer-button btn bg-green-900 border-green-900 text-white lg:text-xl md:text-lg text-md hover:bg-green-950 hover:border-green-950"
+              >MENU</label
+            >
+          </div>
+          <div class="drawer-side">
+            <label
+              for="my-drawer-4"
+              aria-label="close sidebar"
+              class="drawer-overlay"
+            ></label>
+            <ul
+              class="menu p-4 w-80 min-h-full bg-cloverGreen text-xl text-white"
+            >
+              <!-- Sidebar content here -->
+              <li><a href="#process">Our Process</a></li>
+              <li><a>Reviews</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--End of Dream Design & Build buttons-->
+    <div class="bg-process bg-center bg-cover bg-no-repeat" id="process">
+      <div class="bg-overlay-md bg-blend-darken">
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-center text-4xl md:text-5xl m-5">Our Process</h1>
+        </div>
+      </div>
+    </div>
+    <!--Beginning of Dream Explanation-->
+
+    <footer class="flex flex-col items-center p-3 bg-white text-slate-900">
+      <!--Icons-->
+      <div class="flex m-3 gap-4">
+        <a href="https://www.instagram.com/clover_llc/"
+          ><i class="fa-brands fa-square-instagram fa-2xl text-cloverGreen"></i
+        ></a>
+        <a href="tel:385-441-1114"
+          ><i class="fa-solid fa-phone fa-2xl text-cloverGreen"></i
+        ></a>
+        <a href="mailto:cloverindllc443@gmail.com"
+          ><i class="fa-solid fa-envelope fa-2xl text-cloverGreen"></i
+        ></a>
+        <a href="contact.html"
+          ><i class="fa-solid fa-location-dot fa-2xl text-cloverGreen"></i
+        ></a>
+      </div>
+      <!--Copyright-->
+      <p class="font-recoletaMd text-cloverGreen">
+        &#169; 2024 &#8226; Clover Industries Landscaping &#8226;
+      </p>
+    </footer>
+    <script>
+      // Select all links inside the drawer
+      var drawerLinks = document.querySelectorAll(".drawer-side a")
+
+      // Add a click event listener to each link
+      drawerLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          // When a link is clicked, uncheck the checkbox to close the drawer
+          document.getElementById("my-drawer-4").checked = false
+        })
+      })
+
+      window.addEventListener("hashchange", function () {
+        window.scrollTo(window.scrollX, window.scrollY - 80)
+      })
+      // PRESS CMD + SHIFT + R to clear cache and see changes
+    </script>
+  </body>
+</html>
