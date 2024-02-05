@@ -2323,10 +2323,6 @@ body {
     width: 50%;
   }
 
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
